@@ -25,7 +25,7 @@ const NavMenuItem = ({ title, image, children }: NavMenuItemProps) => {
           <div className="grid gap-3">
             {React.Children.map(children, child => {
               if (isGiftUniverse) {
-                // Replace /category/ with /univers-cadeaux/ in href attributes
+                // Replace /category/univers-cadeaux with /univers-cadeaux in href attributes
                 return React.cloneElement(child as React.ReactElement, {
                   children: React.Children.map(
                     (child as React.ReactElement).props.children,
