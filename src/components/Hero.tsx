@@ -6,15 +6,15 @@ const Hero = () => {
   
   const banners = [
     {
-      image: 'https://picsum.photos/1920/1080?random=1',
+      image: 'banner.png',
       title: 'Beautiful Nature'
     },
     {
-      image: 'https://picsum.photos/1920/1080?random=2',
+      image: 'banner2.png',
       title: 'Urban Landscape'
     },
     {
-      image: 'https://picsum.photos/1920/1080?random=3',
+      image: 'banner3.png',
       title: 'Mountain View'
     }
   ];
