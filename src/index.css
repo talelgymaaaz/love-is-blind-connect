@@ -10,6 +10,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'WomanFontRegular';
+  src: url('fonts/womanfontregular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   :root {
     --background: 0 0% 11%;
@@ -44,12 +51,13 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'WomanFontRegular', sans-serif;
   }
   body {
-    @apply bg-background text-foreground m-0 p-0 font-sans;
+    @apply bg-background text-foreground m-0 p-0;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    font-family: 'WomanFontBold', serif;
   }
 }
 
