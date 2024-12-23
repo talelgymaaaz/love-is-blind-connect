@@ -51,19 +51,18 @@ const Hero = () => {
 
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Title and Progress Bar - 10% smaller */}
-      <div className="absolute bottom-8 left-8 z-10 scale-90 origin-bottom-left">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 w-full px-4 md:px-8">
         <motion.h2 
           key={`title-${currentIndex}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="text-white text-2xl font-bold mb-3" // Reduced from text-3xl and mb-4
+          className="text-white text-xl md:text-2xl font-bold mb-3 text-center"
         >
           {banners[currentIndex].title}
         </motion.h2>
         
-        <div className="w-44 h-[3px] bg-gray-600 rounded-full"> {/* Reduced from w-48 and h-1 */}
+        <div className="w-32 md:w-44 h-[3px] bg-gray-600 rounded-full mx-auto">
           <motion.div
             className="h-full bg-white rounded-full"
             initial={{ width: '0%' }}
