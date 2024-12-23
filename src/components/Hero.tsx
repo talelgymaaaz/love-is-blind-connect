@@ -51,18 +51,18 @@ const Hero = () => {
 
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 w-full px-4 md:px-8">
+      <div className="absolute bottom-8 w-full px-4 md:px-8 lg:left-8 lg:bottom-12 lg:w-auto">
         <motion.h2 
           key={`title-${currentIndex}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="text-white text-xl md:text-2xl font-bold mb-3 text-center"
+          className="text-white text-xl md:text-2xl font-bold mb-3 text-center lg:text-left"
         >
           {banners[currentIndex].title}
         </motion.h2>
         
-        <div className="w-32 md:w-44 h-[3px] bg-gray-600 rounded-full mx-auto">
+        <div className="w-32 md:w-44 h-[3px] bg-gray-600 rounded-full mx-auto lg:mx-0">
           <motion.div
             className="h-full bg-white rounded-full"
             initial={{ width: '0%' }}
